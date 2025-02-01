@@ -12,7 +12,7 @@ import (
 
 // YouTube APIからデータを取得し、カスタマイズされたデータを返す関数
 func FetchYouTubeData(query string, nums string) ([]models.CustomYouTubeResponse, error) {
-	apiKey := "AIzaSyDcxIvYnkgXr1VyZkYlkFYTUw9cNhUrYuE"
+	apiKey := "your api key in here"
 	apiUrl := fmt.Sprintf("https://www.googleapis.com/youtube/v3/search?part=snippet&q=%s&type=video&order=viewCount&maxResults=%s&key=%s", query, nums, apiKey)
 
 	resp, err := http.Get(apiUrl)
